@@ -1,13 +1,3 @@
-- 👋 Hi, I’m @yuvi85
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-yuvi85/yuvi85 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +19,15 @@ You can click the Preview link to take a look at your changes.
             color: #666;
         }
 
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
         button {
+            margin-top: 10px;
             padding: 10px 20px;
             font-size: 16px;
             background-color: #4CAF50;
@@ -48,9 +46,16 @@ You can click the Preview link to take a look at your changes.
     <h1>Would You Like to Go Out With Me?</h1>
     <p>Hi there! I've been meaning to ask you something special...</p>
     <p>Would you be interested in going out with me?</p>
-    
-    <button onclick="alert('Thank you for considering! Let me know your answer.')">Yes, I'd love to!</button>
-    <button onclick="alert('I appreciate your honesty! Maybe some other time.')">Sorry, I can't make it.</button>
 
+    <form>
+        <label>
+            <input type="radio" name="response" value="yes" required> Yes, I'd love to!
+        </label>
+        <label>
+            <input type="radio" name="response" value="no" required> Sorry, I can't make it.
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
